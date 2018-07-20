@@ -1,0 +1,63 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2I
+-n 3 -fastpaths -xml miniCPU.twx miniCPU.ncd -o miniCPU.twr miniCPU.pcf
+
+Design file:              miniCPU.ncd
+Physical constraint file: miniCPU.pcf
+Device,package,speed:     xa7a100t,csg324,I,-2I (PRELIMINARY 1.07 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+In<0>          |BS2<0>         |    4.864|
+In<1>          |BS2<1>         |    5.323|
+In<2>          |BS2<2>         |    4.851|
+In<3>          |BS2<3>         |    5.156|
+In<4>          |BS2<4>         |    5.425|
+In<5>          |BS2<5>         |    5.223|
+In<6>          |BS2<6>         |    5.388|
+In<7>          |BS2<7>         |    5.208|
+In<8>          |BS1<0>         |    4.903|
+In<9>          |BS1<1>         |    4.908|
+In<10>         |BS1<2>         |    4.867|
+In<11>         |BS1<3>         |    4.896|
+---------------+---------------+---------+
+
+
+Analysis completed Wed May 27 11:03:17 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 613 MB
+
+
+

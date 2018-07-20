@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/abraham/Desktop/Lab2/FourBitCounter.xst" -ofn "C:/Users/abraham/Desktop/Lab2/FourBitCounter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa7a100t-csg324-2I FourBitCounter.ngc FourBitCounter.ngd  
+map -intstyle ise -p xa7a100t-csg324-2I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o FourBitCounter_map.ncd FourBitCounter.ngd FourBitCounter.pcf 
+par -w -intstyle ise -ol high -mt off FourBitCounter_map.ncd FourBitCounter.ncd FourBitCounter.pcf 
+trce -intstyle ise -v 3 -s 2I -n 3 -fastpaths -xml FourBitCounter.twx FourBitCounter.ncd -o FourBitCounter.twr FourBitCounter.pcf 
+xst -intstyle ise -ifn "C:/Users/abraham/Desktop/Lab2/FourBitCounter.xst" -ofn "C:/Users/abraham/Desktop/Lab2/FourBitCounter.syr" 

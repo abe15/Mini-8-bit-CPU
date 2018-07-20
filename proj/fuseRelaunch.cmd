@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/abraham/Desktop/Lab2/MiniCPUTester_isim_beh.exe" -prj "C:/Users/abraham/Desktop/Lab2/MiniCPUTester_beh.prj" "work.MiniCPUTester" "work.glbl" 

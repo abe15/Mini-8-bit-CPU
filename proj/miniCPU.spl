@@ -1,0 +1,14 @@
+[Inputs]
+Clock
+=In[11:0]=
+[Outputs]
+Overflow
+=Out[7:0]=
+=r1[7:0]=
+=r2[7:0]=
+=BS1[3:0]=
+=BS2[7:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel miniCPU
+

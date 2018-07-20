@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/Users/abraham/Desktop/Lab2/miniCPU.xst" -ofn "C:/Users/abraham/Desktop/Lab2/miniCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa7a100t-csg324-2I miniCPU.ngc miniCPU.ngd  
+map -intstyle ise -p xa7a100t-csg324-2I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o miniCPU_map.ncd miniCPU.ngd miniCPU.pcf 
+par -w -intstyle ise -ol high -mt off miniCPU_map.ncd miniCPU.ncd miniCPU.pcf 
+trce -intstyle ise -v 3 -s 2I -n 3 -fastpaths -xml miniCPU.twx miniCPU.ncd -o miniCPU.twr miniCPU.pcf 
+vhdtdtfi -lib work C:/Users/abraham/Desktop/Lab2/miniCPU.v -lang verilog -prj Lab2 -o miniCPU.spl -module miniCPU -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family aartix7 miniCPU.spl C:/Users/abraham/Desktop/Lab2/miniCPU.sym 
